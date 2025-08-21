@@ -5,7 +5,11 @@ void main()
     printf("Enter marks of 3 subjects:");
     scanf("%d%d%d",&a,&b,&c);
     d=(a+b+c)/3;
-    if(d>=70)
+    if(a<35 || b<35 || c<35)
+    {
+        printf("You are failed");
+        }
+   else if(d>=70)
 {printf("Distinction");
 }
 else if(d>=60 && d<70)
@@ -21,3 +25,4 @@ else
 {printf("Fail");
 }
 }
+
